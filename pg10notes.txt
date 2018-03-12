@@ -1,0 +1,20 @@
+нужно следущее:
+
+CREATE OR REPLACE VIEW zbx_partitions AS -- вьюха используется для определения наличия партишенов
+нужно посмотреть как это выглядит, что можно теперь вместо этого 
+
+CREATE OR REPLACE FUNCTION zbx_time_format_by( -- формирует даты в названиях таблиц
+это можно использовать как есть
+
+-- CREATE OR REPLACE FUNCTION zbx_route_insert_by_clock() -- это триггер не нужен теперь
+
+CREATE OR REPLACE FUNCTION zbx_provision_partitions( -- создание партиций
+это нужно переписать под новый синтаксис
+
+CREATE OR REPLACE FUNCTION zbx_deprovision_partitions( -- перенос данных из портиций в одну таблицу и удаление партиций
+это тоже переписать 
+
+-- CREATE OR REPLACE FUNCTION zbx_constrain_partition( -- создает ограничение теперь не нужно
+
+CREATE OR REPLACE FUNCTION zbx_drop_old_partitions( -- удаление старых партиций
+переписать с учетом нового синтаксиса
